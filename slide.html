@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+    .product{
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center; */
+    position:relative;
+    overflow:hidden;
+    padding:20px;
+    width:70%;
+    height:200px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    margin-top: -50px;
+    background-color: #fff;
+}
+#subscription{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#subscription>h2{
+  margin-left: 15px;
+}
+    .pre-btn,.nxt-btn{
+    background: #fff;
+    border: none;
+}
+.pre-btn{
+    opacity: .3;
+}
+    .product-container{
+    padding:15px;
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+}
+.product-container::-webkit-scrollbar{
+    display:none;
+}
+.product-card{
+    flex:0 0 auto;
+    width:310px;
+    height:110px;
+    margin-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+.product-card>img{
+    position: relative;
+    width:100%;
+    object-fit: cover;
+}
+  </style>
+</head>
+<body>
+  
+</body>
+</html><section class="product">
+    <div id="subscription">
+      <h2>Subscription Benefits</h2>
+      <div id="btns">
+        <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="nxt-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="product-container">
+      <div class="product-card">
+        <img src="https://www.revv.co.in/assets/subscription/home/webp/web/zeroDownPayment_Web.webp">
+      </div>
+      <div class="product-card">
+        <img src="https://www.revv.co.in/assets/subscription/home/webp/web/insuranceMaintenance_Web.webp">
+      </div>
+      <div class="product-card">
+        <img src="https://www.revv.co.in/assets/subscription/home/webp/web/doorstepDelivery_Web.webp">
+      </div>
+      <div class="product-card">
+        <img src="	https://www.revv.co.in/assets/subscription/home/webp/mWeb/commitment_MWeb.webp">
+      </div>
+      <div class="product-card">
+        <img src="https://www.revv.co.in/assets/subscription/home/webp/web/deposit_Web.webp">
+      </div>
+      <div class="product-card">
+        <img src="	https://www.revv.co.in/assets/subscription/home/webp/web/flexibility_Web.webp">
+      </div>
+      <div class="product-card">
+        <img src="	https://www.revv.co.in/assets/subscription/home/webp/mWeb/safeSanitized_MWeb.webp">
+      </div>
+    </div>
+  </section>
+  <script>
+//-----slider js------------
+const productContainer = [...document.querySelectorAll('.product-container')];
+
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainer.forEach((item, i) =>{
+  let containerDimensions = item.getBoundingClientRect();
+  let containerWidth = containerDimensions.width;
+
+  nxtBtn[i].addEventListener('click', ()=>{
+     item.scrollLeft += containerWidth;
+  })
+  preBtn[i].addEventListener('click', ()=>{
+    item.scrollLeft -= containerWidth;
+ })
+ 
+});
+  </script>

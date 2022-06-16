@@ -1,0 +1,219 @@
+#navbar{
+    display: flex;
+    justify-content: space-around;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+#border {
+    display:flex;
+    justify-content: space-between;
+    background-color: silver;
+    height: 30px;
+    
+}
+#border div{
+    display:flex;
+    justify-content: space-between;
+justify-content: flex-start;
+}
+#border div p{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    text-align: center;
+    
+  font-size: small;  
+}
+#cate{
+    display: flex;
+    height: 120px;
+    margin: 10px;
+    font-size: larger;
+
+
+}
+#cate div{
+    font-size: larger;
+    
+    font-weight: bold;
+}
+#cate img{
+    
+height: 80px;
+width: 80px;
+cursor: pointer;
+
+}
+#offer img{
+    width: 100%;
+}
+#search{
+    width:400px;
+    border:1px solid grey;
+    height: 38px;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;;
+    background-color: 
+    hsl(0,0%,93%);
+}
+span{color:lightslategray;
+width: 5px;
+
+margin-left: 80px;}
+i{
+    margin-top: 7px;
+}
+input{
+    border: none;
+    height: 35px;
+    width: 300px;
+background-color:hsl(0,0%,93%);
+outline-color: aliceblue;}
+#cate{
+    width: 100%;
+    display: flex;
+    font-size: small;
+    
+
+}
+#cate img{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+
+}
+#cate div{
+     margin-left: 20px;
+}
+#cate p{
+    margin: 10px;
+}
+#login{
+    display:flex ;
+    margin-top: 10px;
+}
+#products{
+display: grid;
+gap: 50px;
+grid-template-columns: repeat(3,1fr);    
+
+width: 100%;}
+#div{
+    width: 100%;
+    margin-left: 15px;
+
+}
+#products div{
+    margin: 10px;
+    border-radius: 7px;
+
+
+}
+#products img{
+    width: 100%;
+    border-radius: 10px;
+}
+#cart{
+    display:flex;
+    margin-top: 5px;
+}
+#back{
+    background-image: url(https://www.licious.in/img/rebranding/cart_icon.svg);
+}
+#cartd{
+    display :flex;
+ }
+ #location{
+
+    display: flex; 
+}
+ #option{
+
+    height: 50px;
+    font-size: large;
+
+ }
+ select{
+    border-color: aliceblue;
+ }
+#logtext{
+    padding-top: 5px;
+    color: black;
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+}
+#addcart{
+    border: 1px solid red;
+    background-color:#d11243;
+    color:white;
+    font-weight: bold;
+    font-style: inherit;
+    
+    height: 29px;
+    border-radius: 7px;
+}
+#wp{
+    display:flex;
+    justify-content: space-between;
+}
+#poa{
+    display: flex;
+    justify-content: space-between;
+}
+#extra img{
+    width: 100%;
+}
+ /*
+body{
+    background: #eee;
+    user-select: none;
+}
+.search-box{
+  background: #E8E8E4;
+  position: absolute;
+  top: 54px;
+  right: 28.7%;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #D80B15;
+ 
+} */
+
+/* .search-box:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #D80B15;
+}
+
+.search-box input[type="text"]{
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid #D80B15;
+  outline: none;
+}
+
+.search-box input[type="button"]{
+  width: 80px;
+  padding: 5px 0;
+  background: #D80B15;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #D80B15;
+  outline: none;
+  cursor: pointer;
+} */

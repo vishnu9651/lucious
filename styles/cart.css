@@ -1,0 +1,26 @@
+#cartpay{
+    display: flex;
+;
+}
+#bill{
+    border:1px solid red;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+}
+#discount{
+    display: flex;
+    justify-content: space-between
+}
+#total{
+    display: flex;
+    justify-content: space-between
+}
+#deli{
+    display: flex;
+    justify-content: space-between;
+}
+#subtotal{
+    display: flex;
+    justify-content: space-between
+}
