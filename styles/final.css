@@ -1,62 +1,3 @@
-#cartpay{
-    display: flex;
-;
-}
-#bill{
-    border:1px solid red;
-    width: 550px;
-    padding: 20px;
-    margin: 20px;
-    margin-left: 150px;
-    line-height: 10mm;
-    background-color: aquamarine;
-}
-#pr{
-    display:flex;
-    
-    justify-content: space-between;
-}
-#pr button{
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    height: 30px;
-    border: red;
-    margin-top: 10px;
-}
-#discount{
-    display: flex;
-    justify-content: space-between
-}
-#total{
-    display: flex;
-    justify-content: space-between
-}
-#deli{
-    display: flex;
-    justify-content: space-between;
-}
-#subtotal{
-    display: flex;
-    justify-content: space-between
-}
-#tot{
-    font-weight: bold;
-    margin-top: 25px;
-}
-#proceed{
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    height: 30px;
-    text-align: center;
-    padding-bottom:5px;
-}
-#extra{
-    background-color: green;
-    color: white;
-}
 #navbar{
     display: flex;
     justify-content: space-around;
@@ -351,3 +292,50 @@ font-size: 15px;
     width: 100%;
     border:1 px solid red;
 }
+ /*
+body{
+    background: #eee;
+    user-select: none;
+}
+.search-box{
+  background: #E8E8E4;
+  position: absolute;
+  top: 54px;
+  right: 28.7%;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #D80B15;
+ 
+} */
+
+/* .search-box:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #D80B15;
+}
+
+.search-box input[type="text"]{
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid #D80B15;
+  outline: none;
+}
+
+.search-box input[type="button"]{
+  width: 80px;
+  padding: 5px 0;
+  background: #D80B15;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #D80B15;
+  outline: none;
+  cursor: pointer;
+} */

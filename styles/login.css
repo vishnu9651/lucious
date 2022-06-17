@@ -1,66 +1,7 @@
-#cartpay{
-    display: flex;
-;
-}
-#bill{
-    border:1px solid red;
-    width: 550px;
-    padding: 20px;
-    margin: 20px;
-    margin-left: 150px;
-    line-height: 10mm;
-    background-color: aquamarine;
-}
-#pr{
-    display:flex;
-    
-    justify-content: space-between;
-}
-#pr button{
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    height: 30px;
-    border: red;
-    margin-top: 10px;
-}
-#discount{
-    display: flex;
-    justify-content: space-between
-}
-#total{
-    display: flex;
-    justify-content: space-between
-}
-#deli{
-    display: flex;
-    justify-content: space-between;
-}
-#subtotal{
-    display: flex;
-    justify-content: space-between
-}
-#tot{
-    font-weight: bold;
-    margin-top: 25px;
-}
-#proceed{
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    height: 30px;
-    text-align: center;
-    padding-bottom:5px;
-}
-#extra{
-    background-color: green;
-    color: white;
-}
 #navbar{
     display: flex;
     justify-content: space-around;
-
+background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 10px;
     margin-bottom: 10px;

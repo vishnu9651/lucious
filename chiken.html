@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/chiken.css">
+    
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="products">
+  
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="./scripts/chiken.js"></script>
+<script type="module">
+    import navbar from "/navbar/navbar.js"
+    
+    document.getElementById("navbar").innerHTML=navbar()
+    var data=JSON.parse(localStorage.getItem("cart")) || []
+    console.log("length",data.length)
+    document.querySelector("#number").append(data.length)
+    if(data.length>0){
+      let cartval=document.getElementById("number")
+      cartval.style.backgroundColor="yellow"
+      cartval.style.height="15px"
+      cartval.style.width="15px"
+      cartval.style.borderRadius="15px"
+    }
+</script>

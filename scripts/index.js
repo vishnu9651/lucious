@@ -1,3 +1,14 @@
+import navbar from "/navbar/navbar.js"
+    
+    document.getElementById("navbar").innerHTML=navbar()
+//     var data=JSON.parse(localStorage.getItem("cart")) || []
+// console.log("length",data.length)
+// let color=document.querySelector("#number").append(data.length)
+
+import footer from "/navbar/footer.js"
+    
+    document.getElementById("footer").innerHTML=footer()
+
 var items=[
     {
         name:"Today's Deals",
@@ -180,7 +191,46 @@ var products=[{
     "rupee 3": "",
     "price": "₹199",
     "offer-discount": "15% OFF"
-   }
+   },  {
+    "card href": "https://www.licious.in/chicken/chicken-leg-curry-cut-medium---6-pieces-pr_h6ujy05k837",
+    "image": "https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/eff94568-76ce-8f6f-3d3e-4000caddcd26/original/1574104149.3217--2019-11-1900_39_09--458.jpeg",
+    "pv-play-symbol src": "https://www.licious.in/img/rebranding/play_icon.svg",
+    "cta-text": "Only the Safest Chicken!",
+    "product": "Chicken Leg - Curry Cut (Medium Pcs)",
+    "item-desc": "4-6 Large bone-in pieces cut from the leg",
+    "net-weight": "Net wt: 300gms",
+    "info-icon src": "https://www.licious.in/img/rebranding/info-dark.png",
+    "gross-weight": "Gross: 400gms",
+    "rupee": "₹95",
+    "rupee 3": "₹95",
+    "add-to-cart": "Add To Cart",
+    "item-qty": 0,
+    "scooter src": "https://www.licious.in/img/rebranding/express_delivery.svg",
+    "message": "Today",
+    "message 2": "12 PM - 3 PM",
+    "price": "",
+    "offer-discount": ""
+  },
+  {
+    "card href": "https://www.licious.in/chicken/chicken-mini-bites---boneless-pr_fhijtqu0u5q",
+    "image": "https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/8219dd90-2f1d-4c41-b0d1-413f1e95a89b/original/Chicken_MiniBites_Boneless_Hero_Shot.jpg",
+    "pv-play-symbol src": "https://www.licious.in/img/rebranding/play_icon.svg",
+    "cta-text": "DeLicious easy recipes for meaty meals!",
+    "product": "Chicken Mini Bites - Breast Cut (Boneless)",
+    "item-desc": "Boneless chicken breast cut into bite-sized pieces that kids will love!",
+    "net-weight": "Net wt: 250gms",
+    "info-icon src": "https://www.licious.in/img/rebranding/info-dark.png",
+    "gross-weight": "Gross: 350gms",
+    "rupee": "₹145",
+    "rupee 3": "₹145",
+    "add-to-cart": "Add To Cart",
+    "item-qty": 0,
+    "scooter src": "https://www.licious.in/img/rebranding/express_delivery.svg",
+    "message": "Today",
+    "message 2": "12 PM - 3 PM",
+    "price": "",
+    "offer-discount": ""
+  }
 ]
   products.map(function(elem){
     let div=document.createElement("div")

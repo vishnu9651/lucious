@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            
+            background-color:lightgray;          
+            
+            width:500px;
+            height:500px;
+            margin:auto;
+            text-align: center;
+        padding: 10px;
+        line-height:0mm ;
+        }
+        img{padding-bottom:0px;
+            height:100px;
+            width: 350px;
+        }
+        h1{
+            color:orangered
+        }
+        #details{
+            line-height: 5mm;
+            display:flex;
+            justify-content: space-around;
+            text-align: left;
+        }
+        button{
+            height: 30px;
+            width:60px;
+            background-color:skyblue;
+            border-color: skyblue;
+        }
+        #print{
+            line-height: 6mm;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div><img src="https://www.licious.in/img/rebranding/licious-logo.svg"></div>
+    <h1>Order place Sucessfull !</h1>    
+    <div id="details">
+        <div>
+            <h3>Name :</h3>
+            <h3>Mobile No :</h3>
+            <h3>Email :</h3>
+            
+            <h3>Transaction id :</h3>
+            <h3>Order Time:</h3>
+            <h3>Expeted Delivery in :</h3>
+            
+            <h3>Amount :</h3>
+            <button id="print">Print</button>
+        </div>
+        <div id="print">
+            <p id=name></p>
+            <p id=mobile></p>
+            <p id="email"></p>
+            <p id="trans"></p>
+            <p id=order></p>
+            <p id="delivery"></p>
+            
+            <p id="amount"></p>
+            <button id="Close" ><a href="index.html" style="text-decoration: none;">Close</a></button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script type="module">
+     var total=JSON.parse(localStorage.getItem("money"))
+ console.log(total)
+     var details=JSON.parse(localStorage.getItem("user"))
+     
+     let output=[]
+     output.push(details) 
+     console.log(output)
+     var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+console.log(time)
+
+output.map(function(elem){
+        
+        let name=document.createElement("h3")
+name.innerText=elem.name
+ document.querySelector("#name").innerText=elem.name  
+   document.querySelector("#mobile").innerText=elem.number
+  document.querySelector("#email").innerText=elem.email
+  document.querySelector("#order").innerText=time
+  document.querySelector("#delivery").innerText="2 Hours"
+  document.querySelector("#trans").innerText=5787
+ 
+    document.querySelector("#trans").innerText=5787
+ 
+
+
+
+document.querySelector("#amount").innerHTML=total
+alert("thank you for Order")
+let zero=[]
+localStorage.setItem("cart",JSON.stringify(zero))
+//  var colse=document.createElement("button")
+//  document.querySelector("#close").innerText=total.total
+// document.querySelector("#print").append(name)
+})
+    
+// let details=document.getElementById("Details")
+
+
+// let mobile=document.createElement("h3")
+// mobile.innertext=
+// let tran=document.createElement("h3")
+// tran.innertext=
+// let checkin=document.createElement("h3")
+// checkin.innertext=
+// let checkout=document.createElement("h3")
+// checkout.innertext=
+// let email=document.createElement("h3")
+// email.innertext=
+// let amount=document.createElement("h3")
+// amount.innertext=
+
+
+
+
+</script>

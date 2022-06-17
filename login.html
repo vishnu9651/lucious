@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css"/>
     <title>Document</title>
     <style>
         body{
             background:url(https://www.licious.in/blog/wp-content/uploads/2022/05/shutterstock_661093018.jpg);
         }
         #signup{
-            border:1px solid red;
+            
         background-color: white;     
     width:50%;
     height: 250px;
 text-align: center;
 margin: 220px;
+margin-left: 400px;
 }
 input{
     height: 25px;
@@ -34,14 +36,64 @@ button{
 }
     </style>
 </head>
+<div id="navbar"></div>
 <body >
+    
 <div id="signup">
     <h1>Sign In/Sign Up</h1>
-    <input id="number" type="text" placeholder="Enter Mobile Number"/>
+    
+    <input id="number" type="text" placeholder="Enter Mobile Number" required/>
 
     <br>
-<button>Proceed via OTP</button>   
+<button onclick="otpget()">Proceed via OTP</button>   
+<div id="otp"></div>
 <p>By signing in you agree to our terms and conditions</p> 
 </div>
+<div id="footer"></div>
 </body>
 </html>
+<script type="module">
+    import navbar from "/navbar/navbar.js"
+    
+    document.getElementById("navbar").innerHTML=navbar()
+    var data=JSON.parse(localStorage.getItem("cart")) || []
+    console.log("length",data.length)
+    document.querySelector("#number").append(data.length)
+    if(data.length>0){
+      let cartval=document.getElementById("number")
+      cartval.style.backgroundColor="yellow"
+      cartval.style.height="15px"
+      cartval.style.width="15px"
+      cartval.style.borderRadius="15px"
+    }
+    
+import footer from "/navbar/footer.js"
+    
+    document.getElementById("footer").innerHTML=footer()
+    
+</script>
+<script>
+    var mobno=document.querySelector("#number").value
+    console.log("mob",mobno)
+function otpget(){
+
+
+// if((String(mobno).length) <10 ){
+//     alert("Enter correct mobile Number")
+
+
+let p=document.createElement("input")
+p.type="text"
+let verify=document.createElement("button")
+verify.id="verify"
+verify.innerText="verify"
+verify.addEventListener("click",function(){
+    gohome()
+})
+document.querySelector("#otp").append(p,verify)
+}
+function gohome(){
+    window.location="final.html"
+}
+
+</script>
